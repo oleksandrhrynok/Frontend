@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
+    .wrapper {
+        display: grid;
+        width: 500px;
+        border: 2px solid black;
+        height: 500px;      
+        font-size: 30px;
+    }
+    .purple {
+        background-color: purple;              
+    }
+    .brown {
+        background-color: brown;        
+    }
+    .orange {
+        background-color: orange;
+    }
+    .yellow {
+        background-color: yellow;
+    }
+    .green {
+        background-color: green;
+    }
+    .blue {
+        background-color: blue;
+    }
+    .one_line {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .second_line {
+        display: grid;
+        grid-template-columns: 5fr;
+        grid-template-rows: 1fr;
+    }
+    .third_line {
+        display:grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+
+
+</style>
+<body>
+    <div class="wrapper">
+        <div class="one_line">
+            <div class="block purple">1/1</div>
+            <div class="block brown">1/2</div>
+        </div>
+        <div class="second_line">
+            <div class="bloc orange">2/1</div>            
+        </div>
+        <div class="third_line">
+            <div class="bloc yellow">3/1</div>
+            <div class="bloc green">3/2</div>
+            <div class="bloc blue">3/3</div>
+        </div>
+    </div>
+</body>
+</html>
