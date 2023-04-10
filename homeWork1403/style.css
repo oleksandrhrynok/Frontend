@@ -48,7 +48,7 @@ h2 {
   justify-content: space-between; }
 
 .arena {
-  background-image: url("/homeWork1403/img/arena.svg");
+  background-image: url("https://oleksandrhrynok.github.io/Frontend/homeWork1403/img/arena.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
