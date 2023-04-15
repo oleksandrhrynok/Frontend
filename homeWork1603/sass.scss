@@ -1,0 +1,649 @@
+@import "variables.scss";
+
+html,
+body {
+  height: 100%;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100%;
+}
+.header {
+  height: 1109px;
+  background-color: $blue;
+  li {
+    display: inline-block;
+    color: $text-color;
+  }
+  .header-line {
+    height: 110px;
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pages {
+    color: $text-color;
+    font-size: 35px;
+  }
+  .order {
+    color: $text-color-dark;
+    background-color: $order-color;
+    padding: 0 52px;
+    height: 66px;
+    font-size: 19px;
+    margin-left: 83px;
+  }
+  .right-side {
+    display: flex;
+    align-items: center;
+  }
+  .left-side {
+    display: flex;
+    align-items: center;
+  }
+  .menu li {
+    margin-left: 60px;
+  }
+  .header-book {
+    height: 800px;
+    padding: 100px 70px;
+    display: flex;
+    h6 {
+      font-family: "Cardo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 21px;
+      margin-bottom: 0;
+      color: $lightest;
+      margin-top: 150px;
+      span {
+        color: $order-color;
+        font-size: 25px;
+        font-weight: 600;
+        padding-right: 5px;
+      }
+    }
+    h2 {
+      text-transform: capitalize;
+      font-family: "Cardo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 64px;
+      color: $lightest;
+      margin: 0;
+    }
+    .information-book {
+      padding-right: 100px;
+    }
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: $lightest;
+    }
+    .today {
+      margin: 0;
+    }
+    a {
+      color: $lightest;
+      text-transform: capitalize;
+      margin-left: 50px;
+      text-underline-position: under;
+      text-underline-offset: 5px;
+    }
+    .book-cover {
+      padding-left: 120px;
+    }
+    .header-book-buttom {
+      margin-top: 50px;
+    }
+    .book-description {
+      display: flex;
+      justify-content: space-between;
+      h6 {
+        text-transform: capitalize;
+        font-family: "Cardo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+      }
+      .additional {
+        color: #b4c7e7;
+        margin-top: 12px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        margin-left: 20px;
+      }
+      .dot {
+        display: inline-block;
+        width: 5px;
+        height: 10px;
+        background-color: $order-color;
+        border-radius: 50%;
+        margin: 5px;
+      }
+    }
+  }
+}
+.books {
+  height: 805px;
+  background-color: $lightest;
+  margin-top: 40px;
+  .book {
+    color: $blue;
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    margin-top: 55px;
+    text-align: center;
+  }
+  .h-line {
+    text-align: center;
+  }
+  .h-line .line {
+    display: inline-block;
+    margin-top: -20px;
+  }
+  .line {
+    font-weight: 900;
+    font-size: 50px;
+    color: $order-color;
+  }
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: $order-color;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .catalog-book {
+    display: flex;
+    height: 605px;
+    margin-left: 80px;
+    padding-top: 60px;
+  }
+  .cover {
+    height: 382px;
+    width: 285px;
+  }
+  .name-book {
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+  }
+  .price-book {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #ffca42;
+    margin-top: 7px;
+  }
+  .book-description {
+    color: #969aa0;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    width: 320px;
+  }
+  .publishing-house {
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+  .information-book {
+    margin-left: 30px;
+  }
+}
+.author {
+  height: 800px;
+  background-color: $light;
+  display: flex;
+  padding-top: 130px;
+
+  .about-author {
+    margin-left: 150px;
+    .iformation {
+      color: #969aa0;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 34px;
+      margin: 0 0 30px 0;
+    }
+  }
+  .h-line {
+    margin: 0;
+  }
+  .about-book {
+    display: flex;
+    height: 100px;
+    margin-bottom: 50px;
+    .border {
+      border-right: 1px solid #ffca42;
+    }
+    .number {
+      font-family: "Cardo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 55px;
+      color: $blue;
+      width: 190px;
+      margin: 0;
+    }
+    .text {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      color: #969aa0;
+      margin: 0;
+      text-transform: capitalize;
+    }
+  }
+  .foto-author {
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+  .image-container {
+    border: 10px solid #ffca42;
+    width: 470px;
+    height: 570px;
+  }
+  .foto {
+    display: block;
+    height: 620px;
+    width: 525px;
+    margin-top: -4em;
+    margin-left: -4em;
+  }
+  .rectangle {
+    display: flex;
+    height: 150px;
+    width: 435px;
+    background-color: $blue;
+    padding: 20px;
+    align-items: center;
+    .rectangle-text {
+      margin-left: 40px;
+    }
+    .name-author {
+      font-family: "Cardo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      text-transform: capitalize;
+      color: #ffca42;
+    }
+    .contact {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #b4c7e7;
+      margin: 10px 0;
+    }
+  }
+  .the-author {
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    color: $blue;
+    text-transform: capitalize;
+    margin-bottom: 0;
+  }
+  .line {
+    color: #ffca42;
+    font-size: 50px;
+  }
+}
+.trusted {
+  height: 637px;
+  background-color: $lightest;
+  height: 130;
+  width: 130;
+  .book {
+    color: $blue;
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .h-line {
+    text-align: center;
+  }
+  .h-line .line {
+    display: inline-block;
+    margin-top: -20px;
+  }
+  .line {
+    font-weight: 900;
+    font-size: 50px;
+    color: $order-color;
+  }
+  .awards {
+    display: flex;
+    margin-top: 40px;
+    .item-award {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 35px;
+      padding: 0 35px;
+    }
+
+    .award {
+      width: 190px;
+      height: 100px;
+    }
+    .name-award {
+      font-family: "Cardo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      text-align: center;
+      color: $blue;
+      text-transform: capitalize;
+    }
+    .text-award {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 28px;
+      text-align: center;
+      color: #969aa0;
+    }
+  }
+}
+.get-book {
+  height: 454px;
+  background-color: $blue;
+  padding: 70px;
+  display: flex;
+
+  .get-book-text {
+    margin-top: 70px;
+    padding-right: 200px;
+  }
+  .name-item {
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 54px;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .text-item {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;
+    color: #b4c7e7;
+  }
+  .h-line .line {
+    display: inline-block;
+    margin-top: -20px;
+  }
+  .line {
+    font-weight: 900;
+    font-size: 50px;
+    color: $order-color;
+  }
+  .coffee {
+    height: 495px;
+    width: 580px;
+  }
+}
+.you-learn {
+  height: 835px;
+  margin-top: 140px;
+  .name-you-learn {
+    color: $blue;
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .h-line {
+    text-align: center;
+  }
+  .h-line .line {
+    display: inline-block;
+    margin-top: -20px;
+  }
+  .line {
+    font-weight: 900;
+    font-size: 50px;
+    color: $order-color;
+  }
+  .item {
+    display: flex;
+    margin-left: 70px;
+    width: 655px;
+    margin-top: 30px;
+    .inform-item {
+      height: 275px;
+      width: 300px;
+      background-color: #f4f8ff;
+      border-radius: 0;
+      padding-left: 30px;
+    }
+    .you-learn-text {
+      font-family: "Cardo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 34px;
+      color: $blue;
+      padding: 0 57px 27px 0;
+    }
+  }
+  .inform-item-you-learn {
+    display: flex;
+  }
+
+  .you-learn-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: $order-color;
+    text-align: center;
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: $blue;
+  }
+  .foto-author {
+    padding-top: 40px;
+    padding-left: 40px;
+    margin-left: 90px;
+  }
+  .image-container {
+    border: 10px solid #ffca42;
+    width: 470px;
+    height: 570px;
+  }
+  .foto {
+    display: block;
+    height: 620px;
+    width: 525px;
+    margin-top: -4em;
+    margin-left: -4em;
+  }
+}
+.resources {
+  height: 945px;
+  padding: 110px 70px;
+  .name-you-learn {
+    color: $blue;
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .h-line {
+    text-align: center;
+  }
+  .h-line .line {
+    display: inline-block;
+    margin-top: -20px;
+  }
+  .line {
+    font-weight: 900;
+    font-size: 50px;
+    color: $order-color;
+  }
+  .articles {
+    display: flex;
+  }
+  .art-item {
+    display: flex;
+    height: 622px;
+    width: 420px;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin: 40px 10px;
+    h3 {
+      font-family: "Cardo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      color: $blue;
+      margin: 25px 130px 0 30px;
+    }
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 30px;
+      color: #969aa0;
+      padding: 0 70px 0 30px;
+    }
+    h6 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      margin: 0 30px;
+      text-align: end;
+    }
+  }
+}
+.footer {
+  height: 385px;
+  background-color: $blue;
+  display: flex;
+  padding: 90px 70px 135px 70px;
+  .pages {
+    color: $text-color;
+    font-size: 35px;
+  }
+  h6 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #b4c7e7;
+    text-transform: capitalize;
+    .dot {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background-color: $order-color;
+      border-radius: 50%;
+      margin-bottom: 4px;
+    }
+  }
+  ul {
+    list-style-type: none;
+    li {
+      margin-left: 10px;
+    }
+  }
+  .social {
+    display: flex;
+    padding: 0;
+  }
+  .social-item {
+    width: 258px;
+    padding-top: 30px;
+  }
+  h3 {
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: capitalize;
+  }
+  .item {
+    margin-left: 30px;
+    width: 300px;
+    padding-left: 30px;
+  }
+  .logo {
+    margin-left: 10px;
+  }
+  .name-content {
+    display: flex;
+    .name-h {
+      font-family: "Cardo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+    }
+    .cont {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 27px;
+      color: #B4C7E7;
+      margin-left: 20px;
+      width: 250px;
+    }
+  }
+  .contacts {
+    width: 435px;
+
+  } 
+}

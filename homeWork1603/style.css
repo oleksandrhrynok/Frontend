@@ -1,0 +1,542 @@
+html,
+body {
+  height: 100%; }
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100%; }
+
+.header {
+  height: 1109px;
+  background-color: #1B3764; }
+  .header li {
+    display: inline-block;
+    color: #F6F8FC; }
+  .header .header-line {
+    height: 110px;
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header .pages {
+    color: #F6F8FC;
+    font-size: 35px; }
+  .header .order {
+    color: #1B3764;
+    background-color: #FFCA42;
+    padding: 0 52px;
+    height: 66px;
+    font-size: 19px;
+    margin-left: 83px; }
+  .header .right-side {
+    display: flex;
+    align-items: center; }
+  .header .left-side {
+    display: flex;
+    align-items: center; }
+  .header .menu li {
+    margin-left: 60px; }
+  .header .header-book {
+    height: 800px;
+    padding: 100px 70px;
+    display: flex; }
+    .header .header-book h6 {
+      font-family: "Cardo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 21px;
+      margin-bottom: 0;
+      color: #FFFFFF;
+      margin-top: 150px; }
+      .header .header-book h6 span {
+        color: #FFCA42;
+        font-size: 25px;
+        font-weight: 600;
+        padding-right: 5px; }
+    .header .header-book h2 {
+      text-transform: capitalize;
+      font-family: "Cardo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 64px;
+      color: #FFFFFF;
+      margin: 0; }
+    .header .header-book .information-book {
+      padding-right: 100px; }
+    .header .header-book p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #FFFFFF; }
+    .header .header-book .today {
+      margin: 0; }
+    .header .header-book a {
+      color: #FFFFFF;
+      text-transform: capitalize;
+      margin-left: 50px;
+      text-underline-position: under;
+      text-underline-offset: 5px; }
+    .header .header-book .book-cover {
+      padding-left: 120px; }
+    .header .header-book .header-book-buttom {
+      margin-top: 50px; }
+    .header .header-book .book-description {
+      display: flex;
+      justify-content: space-between; }
+      .header .header-book .book-description h6 {
+        text-transform: capitalize;
+        font-family: "Cardo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px; }
+      .header .header-book .book-description .additional {
+        color: #b4c7e7;
+        margin-top: 12px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        margin-left: 20px; }
+      .header .header-book .book-description .dot {
+        display: inline-block;
+        width: 5px;
+        height: 10px;
+        background-color: #FFCA42;
+        border-radius: 50%;
+        margin: 5px; }
+
+.books {
+  height: 805px;
+  background-color: #FFFFFF;
+  margin-top: 40px; }
+  .books .book {
+    color: #1B3764;
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    margin-top: 55px;
+    text-align: center; }
+  .books .h-line {
+    text-align: center; }
+  .books .h-line .line {
+    display: inline-block;
+    margin-top: -20px; }
+  .books .line {
+    font-weight: 900;
+    font-size: 50px;
+    color: #FFCA42; }
+  .books .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #FFCA42;
+    border-radius: 50%;
+    margin-right: 10px; }
+  .books .catalog-book {
+    display: flex;
+    height: 605px;
+    margin-left: 80px;
+    padding-top: 60px; }
+  .books .cover {
+    height: 382px;
+    width: 285px; }
+  .books .name-book {
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-bottom: 0; }
+  .books .price-book {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #ffca42;
+    margin-top: 7px; }
+  .books .book-description {
+    color: #969aa0;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    width: 320px; }
+  .books .publishing-house {
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: capitalize; }
+  .books .information-book {
+    margin-left: 30px; }
+
+.author {
+  height: 800px;
+  background-color: #F5F8FC;
+  display: flex;
+  padding-top: 130px; }
+  .author .about-author {
+    margin-left: 150px; }
+    .author .about-author .iformation {
+      color: #969aa0;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 34px;
+      margin: 0 0 30px 0; }
+  .author .h-line {
+    margin: 0; }
+  .author .about-book {
+    display: flex;
+    height: 100px;
+    margin-bottom: 50px; }
+    .author .about-book .border {
+      border-right: 1px solid #ffca42; }
+    .author .about-book .number {
+      font-family: "Cardo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 55px;
+      color: #1B3764;
+      width: 190px;
+      margin: 0; }
+    .author .about-book .text {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      color: #969aa0;
+      margin: 0;
+      text-transform: capitalize; }
+  .author .foto-author {
+    padding-top: 40px;
+    padding-left: 40px; }
+  .author .image-container {
+    border: 10px solid #ffca42;
+    width: 470px;
+    height: 570px; }
+  .author .foto {
+    display: block;
+    height: 620px;
+    width: 525px;
+    margin-top: -4em;
+    margin-left: -4em; }
+  .author .rectangle {
+    display: flex;
+    height: 150px;
+    width: 435px;
+    background-color: #1B3764;
+    padding: 20px;
+    align-items: center; }
+    .author .rectangle .rectangle-text {
+      margin-left: 40px; }
+    .author .rectangle .name-author {
+      font-family: "Cardo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      text-transform: capitalize;
+      color: #ffca42; }
+    .author .rectangle .contact {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #b4c7e7;
+      margin: 10px 0; }
+  .author .the-author {
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    color: #1B3764;
+    text-transform: capitalize;
+    margin-bottom: 0; }
+  .author .line {
+    color: #ffca42;
+    font-size: 50px; }
+
+.trusted {
+  height: 637px;
+  background-color: #FFFFFF;
+  height: 130;
+  width: 130; }
+  .trusted .book {
+    color: #1B3764;
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    text-align: center; }
+  .trusted .h-line {
+    text-align: center; }
+  .trusted .h-line .line {
+    display: inline-block;
+    margin-top: -20px; }
+  .trusted .line {
+    font-weight: 900;
+    font-size: 50px;
+    color: #FFCA42; }
+  .trusted .awards {
+    display: flex;
+    margin-top: 40px; }
+    .trusted .awards .item-award {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 35px;
+      padding: 0 35px; }
+    .trusted .awards .award {
+      width: 190px;
+      height: 100px; }
+    .trusted .awards .name-award {
+      font-family: "Cardo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      text-align: center;
+      color: #1B3764;
+      text-transform: capitalize; }
+    .trusted .awards .text-award {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 28px;
+      text-align: center;
+      color: #969aa0; }
+
+.get-book {
+  height: 454px;
+  background-color: #1B3764;
+  padding: 70px;
+  display: flex; }
+  .get-book .get-book-text {
+    margin-top: 70px;
+    padding-right: 200px; }
+  .get-book .name-item {
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 54px;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin-bottom: 0; }
+  .get-book .text-item {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;
+    color: #b4c7e7; }
+  .get-book .h-line .line {
+    display: inline-block;
+    margin-top: -20px; }
+  .get-book .line {
+    font-weight: 900;
+    font-size: 50px;
+    color: #FFCA42; }
+  .get-book .coffee {
+    height: 495px;
+    width: 580px; }
+
+.you-learn {
+  height: 835px;
+  margin-top: 140px; }
+  .you-learn .name-you-learn {
+    color: #1B3764;
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    text-align: center; }
+  .you-learn .h-line {
+    text-align: center; }
+  .you-learn .h-line .line {
+    display: inline-block;
+    margin-top: -20px; }
+  .you-learn .line {
+    font-weight: 900;
+    font-size: 50px;
+    color: #FFCA42; }
+  .you-learn .item {
+    display: flex;
+    margin-left: 70px;
+    width: 655px;
+    margin-top: 30px; }
+    .you-learn .item .inform-item {
+      height: 275px;
+      width: 300px;
+      background-color: #f4f8ff;
+      border-radius: 0;
+      padding-left: 30px; }
+    .you-learn .item .you-learn-text {
+      font-family: "Cardo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 34px;
+      color: #1B3764;
+      padding: 0 57px 27px 0; }
+  .you-learn .inform-item-you-learn {
+    display: flex; }
+  .you-learn .you-learn-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #FFCA42;
+    text-align: center;
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #1B3764; }
+  .you-learn .foto-author {
+    padding-top: 40px;
+    padding-left: 40px;
+    margin-left: 90px; }
+  .you-learn .image-container {
+    border: 10px solid #ffca42;
+    width: 470px;
+    height: 570px; }
+  .you-learn .foto {
+    display: block;
+    height: 620px;
+    width: 525px;
+    margin-top: -4em;
+    margin-left: -4em; }
+
+.resources {
+  height: 945px;
+  padding: 110px 70px; }
+  .resources .name-you-learn {
+    color: #1B3764;
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    text-align: center; }
+  .resources .h-line {
+    text-align: center; }
+  .resources .h-line .line {
+    display: inline-block;
+    margin-top: -20px; }
+  .resources .line {
+    font-weight: 900;
+    font-size: 50px;
+    color: #FFCA42; }
+  .resources .articles {
+    display: flex; }
+  .resources .art-item {
+    display: flex;
+    height: 622px;
+    width: 420px;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin: 40px 10px; }
+    .resources .art-item h3 {
+      font-family: "Cardo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      color: #1B3764;
+      margin: 25px 130px 0 30px; }
+    .resources .art-item p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 30px;
+      color: #969aa0;
+      padding: 0 70px 0 30px; }
+    .resources .art-item h6 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      margin: 0 30px;
+      text-align: end; }
+
+.footer {
+  height: 385px;
+  background-color: #1B3764;
+  display: flex;
+  padding: 90px 70px 135px 70px; }
+  .footer .pages {
+    color: #F6F8FC;
+    font-size: 35px; }
+  .footer h6 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #b4c7e7;
+    text-transform: capitalize; }
+    .footer h6 .dot {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background-color: #FFCA42;
+      border-radius: 50%;
+      margin-bottom: 4px; }
+  .footer ul {
+    list-style-type: none; }
+    .footer ul li {
+      margin-left: 10px; }
+  .footer .social {
+    display: flex;
+    padding: 0; }
+  .footer .social-item {
+    width: 258px;
+    padding-top: 30px; }
+  .footer h3 {
+    font-family: "Cardo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: capitalize; }
+  .footer .item {
+    margin-left: 30px;
+    width: 300px;
+    padding-left: 30px; }
+  .footer .logo {
+    margin-left: 10px; }
+  .footer .name-content {
+    display: flex; }
+    .footer .name-content .name-h {
+      font-family: "Cardo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: capitalize; }
+    .footer .name-content .cont {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 27px;
+      color: #B4C7E7;
+      margin-left: 20px;
+      width: 250px; }
+  .footer .contacts {
+    width: 435px; }
