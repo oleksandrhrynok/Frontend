@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Car {
+        constructor(model, owner, price, location) {
+          this.model = model;
+          this.owner = owner;
+          this.price = price;
+          this.location = location;
+        }
+      }
+      const volvo = new Car("Volvo sx 300", "Magnus Stein", 18000, "Stockholm");
+      const mercedez = new Car(
+        "Mercedez Benz",
+        "Ludwig Klauph",
+        12000,
+        "Berlin"
+      );
+      const fiat = new Car("Fiat Tipo", "Antonio Mazorelli", 8000, "Rome");
+      const seat = new Car("Seat Arona", "Sebastian Anrea", 9000, "Madrid");
+
+      const cars = [volvo, mercedez, fiat, seat];
+
+      console.log(cars);
+
+      const table = document.createElement("table");
+      table.style.borderCollapse = "collapse";
+      table.style.margin = "50px";
+
+      const headerRow = document.createElement("tr");
+      const headers = ["Model", "Ower", "Price", "Location"];
+
+      for (let i = 0; i < headers.length; i++) {
+        const th = document.createElement("th");
+        th.textContent = headers[i];
+        headerRow.style.border = "1px solid black";
+        headerRow.style.padding = "5px";
+        headerRow.appendChild(th);
+      }
+
+      table.appendChild(headerRow);
+
+      for (let i = 0; i < cars.length; i++) {
+        const car = cars[i];
+
+        const row = document.createElement("tr");
+        row.style.border = "1px solid black";
+
+        const modelCell = document.createElement("td");
+        modelCell.textContent = car.model;
+        modelCell.style.border = "1px solid black";
+        modelCell.style.padding = "5px";
+
+        const ownerCell = document.createElement("td");
+        ownerCell.textContent = car.owner;
+        ownerCell.style.border = "1px solid black";
+        ownerCell.style.padding = "5ps";
+
+        const priceCell = document.createElement("td");
+        priceCell.textContent = document.createElement("td");
+        priceCell.style.border = "1px solid black";
+        priceCell.style.padding = "5px";
+
+        const locationCell = document.createElement("td");
+        locationCell.textContent = document.createElement("td");
+        locationCell.style.border = "1px solid black";
+        locationCell.style.padding = "5px";
+
+        row.appendChild(modelCell);
+        row.appendChild(ownerCell);
+        row.appendChild(priceCell);
+        row.appendChild(locationCell);
+
+        table.appendChild(row);
+      }
+
+      document.body.appendChild(table);
+    </script>
+  </body>
+</html>
