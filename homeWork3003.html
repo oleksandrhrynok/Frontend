@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        canvas {
+            border: 5px solid black;    
+          
+            margin: 0 auto;       
+            
+            
+        }       
+            
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="square">
+    <canvas id="myCanvas"  width="1000" height="1000"></canvas>
+    
+</div>
+
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        const squareSize = 900;
+
+        const numSquares = 5;
+        const spacing = 20;
+        
+        let currentSize = squareSize;
+
+        for (let i = 0; i < numSquares; i++) {
+            const x = (canvas.width - currentSize) / 2;
+            const y = (canvas.height - currentSize) / 2;
+
+            ctx.strokeRect(x, y, currentSize, currentSize);
+
+            currentSize -= spacing;
+        }
+        
+      
+
+    </script>
+    <script>
+        
+    </script>
+</body>
+</html>
