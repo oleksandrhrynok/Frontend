@@ -16,7 +16,7 @@
     
 </style>
 <body>
-    <canvas id="canvas" width="1000" height="1000"></canvas>
+    <canvas id="canvas" width="400" height="400"></canvas>
    <script>
     class Line {
         constructor(startX, startY, endX, endY, color, lineWidth) {
@@ -29,9 +29,9 @@
         }
     }
 
-    const line1 = new Line(20, 20, 100, 100, "red", 5);
-    const line2 = new Line(200, 200, 300, 300, "green",10);
-    const line3 = new Line(400, 400, 500, 500, "blue", 15);
+    const line1 = new Line(10, 10, 50, 50, "red", 5);
+    const line2 = new Line(100, 100, 150, 150, "green",10);
+    const line3 = new Line(400, 200, 300, 300, "blue", 15);
 
     class CanvasManager {
         constructor(canvas) {
