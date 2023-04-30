@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><style>
+    
+    body {
+        display: flex;    
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    
+</style>
+<body>
+    <canvas id="canvas" width="1000" height="1000"></canvas>
+   <script>
+    class Line {
+        constructor(startX, startY, endX, endY, color, lineWidth) {
+            this.startX = startX;
+            this.startY = startY;
+            this.endX = endX;
+            this.endY = endY;
+            this.color = color;
+            this.lineWidth = lineWidth; 
+        }
+    }
+
+    const line1 = new Line(20, 20, 100, 100, "red", 5);
+    const line2 = new Line(200, 200, 300, 300, "green",10);
+    const line3 = new Line(400, 400, 500, 500, "blue", 15);
+
+    class CanvasManager {
+        constructor(canvas) {
+            this.canvas = document.getElementById(canvas);
+            this.ctx = this.canvas.getContext("2d");
+        }
+        drawLine (line) {
+            this.ctx.beginPath();
+            this.ctx.moveTo(line.startX, line.startY);
+            this.ctx.lineTo(line.endX, line.endY);
+            this.ctx.strokeStyle = line.color;
+            this.ctx.lineWidth = line.lineWidth || 1;
+            this.ctx.stroke();
+
+        }
+    }
+
+    const canvasManager = new CanvasManager("canvas");
+
+    canvasManager.drawLine(line1);
+    canvasManager.drawLine(line2);
+    canvasManager.drawLine(line3);
+   </script> 
+</body>
+</html>
