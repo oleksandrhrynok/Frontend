@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .tasks {
+      display: flex;
+      gap: 20px;
+    }
+
+    p {
+      width: 300px;
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+      
+    }
+   
+  </style>
+  <body>
+    <div class="tasks">
+      <div class="task_one">
+        <h2>Задача 1</h2>
+        <p>
+          Напишите функцию, которая принимает массив чисел и возвращает true,
+          если каждый элемент массива является четным числом.
+        </p>
+        <form id="form1">
+          <input type="number" placeholder="Enter numbers" id="task1" />
+          <button type="submit">Проверить</button>
+        </form>
+        <output name="result" aria-placeholder="Result"></output>
+      </div>
+      <div class="task_two">
+        <h2>Задача 2</h2>
+        <p>
+          Напишите функцию, которая принимает массив объектов, каждый из которых
+          имеет свойство "name", и возвращает true, если каждый объект имеет
+          уникальное имя.
+        </p>
+        <form>
+          <input type="text" placeholder="Enter name" />
+          <button type="submit">Добавить имя</button>
+        </form>
+        <output class="all_names"></output><br>
+        <button id="coincidences">Проверить на савпадения </button>
+      </div>
+      <div class="two_arrays">
+        <h2>Задача 3</h2>
+        <p>Напишите функцию, которая принимает два массива и возвращает true, если первый массив содержит все элементы второго массива.</p>
+        <input type="text" placeholder="First data set" id="first">
+        <button id="first_buttom" onclick="addToFirstArray()">Добавить</button><br>
+        <output id="show_first_array"></output><br>
+        <input type="text" placeholder="Second data set" id="second">
+        <button id="second_buttom" onclick="addToSecondArray()">Добавить</button><br><output id="show_second_array"></output><br>
+        <button id="compare" onclick="compareArrays()">Сравнить эти масивы</button>
+        <output id="show_result"></output>
+      </div>
+      <div class="sorting">
+        <h2>Задача 4</h2>
+        <p>Напишите функцию, которая принимает массив строк и возвращает новый массив, отсортированный в алфавитном порядке.</p>
+        <input type="text" id="add_line" placeholder="Enter line">
+        <button onclick="addLine()">Добавить</button><br>
+        <output id="show_line"></output><br>
+        <button onclick="compareStrings()">Отсортировать в алфавитном порядке</button><br>
+        <output id="show_strings"></output><br>
+      </div>
+      <div class="sort_age">
+        <h2>Задача 5</h2>
+        <p>Напишите функцию, которая принимает массив объектов и возвращает новый массив, содержащий только те объекты, которые имеют свойство "age" больше или равное 18.</p>
+        <input type="text" id="name_input" placeholder="Enter name" style="margin:0 0 20px 0;">
+        <input type="number" id="age_input" placeholder="Enter age">
+        <button onclick="addData()" style="width: 94%;">Добавит имя и возраст </button><br>
+        <output id="show_name_age"></output><br>
+        <button onclick="sortAge()" style="width: 94%;">Показать всех старше 18</button><br>
+        <output id="over_eighteen" ></output>
+      </div>
+    </div>
+    <script src="/work_18_04/script.js"></script>
+  </body>
+</html>
