@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/animated_objects/style.css" />
+  </head>
+  <body>
+    <div class="frame" id="frame">
+      <div class="arrows">
+        <div class="arrow" onclick="slide(-1)"><</div>
+        <div class="arrow" onclick="slide(1)">></div>
+      </div>
+      <div class="nav">
+        <div class="dot" onclick="goTo(0)"></div>
+        <div class="dot" onclick="goTo(1)"></div>
+        <div class="dot" onclick="goTo(2)"></div>
+        <div class="dot" onclick="goTo(3)"></div>
+      </div>
+    </div>
+    <div class="images">
+      <h2 class="header">Бугалтерские обслуживание</h2>
+    </div>
+    <div class="feedback">
+      <span>отзивы</span>
+      <h2 class="block-title">Ваши благодарности</h2>
+      <div class="text-and-author">
+      <div class="text">
+        <div>
+          <p>          
+          </p>
+        </div>
+        <div class="author">
+          <div class="feed-img">
+            <img  src="/animated_objects/img/Ell.svg" alt="" style="height: 80px; width: 80px;"  />
+          </div>
+        </div>
+          <div class="name">
+            <h5></h5>
+            <h6></h6>
+          </div>
+        </div>
+        <div class="arrows-feed">
+            <div class="arrow-feedback" onclick="feedback(-1)"><</div>
+            <div class="arrow-feedback" onclick="feedback(1)">></div>
+          </div>
+          <div class="nav-feed">
+            <div class="dot-feed" onclick="goToFeed(0)"></div>
+            <div class="dot-feed" onclick="goToFeed(1)"></div>
+            <div class="dot-feed" onclick="goToFeed(2)"></div>
+            <div class="dot-feed" onclick="goToFeed(3)"></div>
+          </div>
+        </div>
+      </div>      
+    </div>
+
+    <script src="/animated_objects/script.js"></script>
+  </body>
+</html>
