@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <style>
+    .frame {
+      height: 600px;
+      background-image: url("https://cdn.unenvironment.org/2022-03/field-ge4d2466da_1920.jpg");
+      background-position: center;
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .arrows {
+      position: absolute;
+      right: 200px;
+      bottom: 100px;
+    }
+    .arrow {
+      width: 60px;
+      height: 60px;
+      background-color: rgb(43, 43, 43);
+      opacity: 0.7;
+      color: white;
+      font-size: 26px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .nav .dot {
+      display: inline-block;
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+      opacity: 0.75;
+      background-color: rgb(220, 220, 200);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    
+    .nav {
+      position: absolute;
+      bottom: 100px;
+      left: 400px;
+    }
+    .animated {
+      animation: fade 2s 1;
+    }
+    @keyframes fade {
+      0% {
+        opacity: 0.3;
+      }
+    
+      100% {
+        opacity: 1;
+      }
+    }
+    .images {
+      margin-top: 20px;
+      height: 350px;
+      width: 350px;
+      background-image: url(/animated_objects/img/Rectangle\ 2.svg);
+      position: relative;
+    }
+    .images:hover::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 95, 163, 0.65);
+    }
+    .header {
+      margin: 0;
+      padding: 0;
+      color: white;
+      position: absolute;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      height: 190px;
+      width: 55px;
+      top: 260px;
+      left: 45px;
+    }
+    .feedback {
+      width: 1110px;
+      height: 620px;
+      margin: 140px 405px;
+      position: relative;
+    }
+    span {
+      color: #bdbdbd;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 33px;
+      text-transform: capitalize;
+    }
+    .block-title {
+      color: #333333;
+      font-family: "Merriweather";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 69px;
+    }
+    .text-and-author {
+      background-color: #ebebeb;
+      padding: 45px 95px;
+      height: 200px;
+    }
+    .author {
+      position: relative;
+      margin-top: 0px;
+    }
+    .feed-img {
+      position: absolute;
+      top: 40px;
+    
+    }
+    .name {
+      position: absolute;
+      left: 170px;
+      bottom: 200px;
+    }
+    
+    h5 {
+      text-transform: capitalize;
+      color: #000000;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 25px;
+      margin: 0;
+    }
+    h6 {
+      color: #4f4f4f;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      margin: 0;
+    }
+    h5,
+    h6 {
+      margin-left: 35px;
+    }
+    p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 25px;
+      color: #000000;
+    }
+    .arrow-feedback .dot-feed {
+      position: absolute;
+      bottom: 0;
+    }
+    .arrows-feed {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    .arrow-feedback {
+      height: 60px;
+      width: 60px;
+      background-color: #005fa3;
+      opacity: 0.7;
+      color: white;
+      font-size: 26px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      right: 0;
+      bottom: 0;
+      
+    }
+    
+    .nav-feed .dot-feed {
+      display: inline-block;
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+      opacity: 0.75;
+      background-color: #005fa3;
+      border-radius: 50%;
+      cursor: pointer;
+      opacity: 0.4;
+    }
+    .nav-feed {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    
+    
+  </style>
+  <body>
+    <div class="frame" id="frame">
+      <div class="arrows">
+        <div class="arrow" onclick="slide(-1)"><</div>
+        <div class="arrow" onclick="slide(1)">></div>
+      </div>
+      <div class="nav">
+        <div class="dot" onclick="goTo(0)"></div>
+        <div class="dot" onclick="goTo(1)"></div>
+        <div class="dot" onclick="goTo(2)"></div>
+        <div class="dot" onclick="goTo(3)"></div>
+      </div>
+    </div>
+    <div class="images">
+      <h2 class="header">Бугалтерские обслуживание</h2>
+    </div>
+    <div class="feedback">
+      <span>отзивы</span>
+      <h2 class="block-title">Ваши благодарности</h2>
+      <div class="text-and-author">
+      <div class="text">
+        <div>
+          <p>          
+          </p>
+        </div>
+        <div class="author">
+          <div class="feed-img">
+            <img  src="/animated_objects/img/Ell.svg" alt="" style="height: 80px; width: 80px;"  />
+          </div>
+        </div>
+          <div class="name">
+            <h5></h5>
+            <h6></h6>
+          </div>
+        </div>
+        <div class="arrows-feed">
+            <div class="arrow-feedback" onclick="feedback(-1)"><</div>
+            <div class="arrow-feedback" onclick="feedback(1)">></div>
+          </div>
+          <div class="nav-feed">
+            <div class="dot-feed" onclick="goToFeed(0)"></div>
+            <div class="dot-feed" onclick="goToFeed(1)"></div>
+            <div class="dot-feed" onclick="goToFeed(2)"></div>
+            <div class="dot-feed" onclick="goToFeed(3)"></div>
+          </div>
+        </div>
+      </div>      
+    </div>
+
+    <script>let currentIndex = 0;
+      const images = [
+          'https://static.vecteezy.com/ti/fotos-gratis/p3/6671766-fantastica-lua-magica-luz-e-agua-barco-com-arvore-papel-de-parede-gratis-foto.jpg',
+          'https://us.123rf.com/450wm/virtosmedia/virtosmedia2301/virtosmedia230118463/197249183-planeta-alien%C3%ADgena-de-fantas%C3%ADa-monta%C3%B1a-y-lago-ilustraci%C3%B3n-3d.jpg?ver=6',
+          'https://img.freepik.com/fotos-premium/nuevo-planeta_176100-157.jpg',
+          'https://img.freepik.com/fotos-premium/paisaje-nocturno-fantasia-planetas-rio_104785-1058.jpg'
+      ];
+      
+      function slide(step) {
+          currentIndex = currentIndex + step;
+      
+          if (currentIndex === -1) {
+              currentIndex = images.length - 1;
+          }
+      
+          if (currentIndex === images.length) {
+              currentIndex = 0;
+          }
+          frame.classList.add('animated');
+          setTimeout(function () {
+              frame.classList.remove('animated');
+          }, 2000);
+      
+          frame.style.backgroundImage = `url(${images[currentIndex]})`;
+      
+          
+      }
+      
+      function goTo(index) {
+          currentIndex = index;
+          frame.classList.add('animated');
+          setTimeout(function () {
+              frame.classList.remove('animated');
+          }, 2000);
+          frame.style.backgroundImage = `url(${images[currentIndex]})`;
+      }
+      
+      const feedbacks = [
+          {
+              name: "Екатерина Иванова",
+              position: "Директор ООО 'Раз-два'", 
+              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, maxime! Vero quae, qui tempore error repudiandae temporibus quaerat magni veniam dolore ipsum ex, saepe nihil quisquam. Nam pariatur ratione quo?"
+          },
+          {
+              name: "Иван Петров",
+              position: "Главный инженер ООО 'Три-четыре'", 
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac tellus convallis, vehicula purus eu, mattis sem. Fusce hendrerit velit quis tellus consequat, eu faucibus nibh tincidunt."
+          }, 
+          {
+              name: "Анна Сидорова",
+              position: "HR-менеджер ООО 'Пять-шесть'", 
+              text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, maxime! Vero quae, qui tempore error repudiandae temporibus quaerat magni veniam dolore ipsum ex, saepe nihil quisquam. Nam pariatur ratione quo?"
+          }, 
+          {
+              name: "Виктор Иванов",
+              position: "PR-менджер ООО 'Пять-шесть'", 
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus luctus neque, vel posuere nisi pellentesque in. Fusce ultrices eros et nunc maximus ultrices. Aliquam vel ex pharetra, eleifend velit sed, vehicula metus. Nullam semper, metus sed elementum malesuada, libero diam euismod nisl, vel tincidunt arcu mi eu lectus."
+          }
+      
+      ];
+      let currentFeedbackIndex = 0 ;
+      
+      function updateFeedback() {
+          const currentFeedback = feedbacks[currentFeedbackIndex];
+          const nameElement = document.querySelector(".text-and-author .name h5");
+          const positionElement = document.querySelector(".text-and-author .name h6");
+          const textElement = document.querySelector(".text-and-author p");
+          nameElement.textContent = currentFeedback.name;
+          positionElement.textContent = currentFeedback.position;
+          textElement.textContent = currentFeedback.text;
+      }
+      
+      function feedback(direction) {
+          currentFeedbackIndex += direction;
+          if (currentFeedbackIndex < 0) {
+              currentFeedbackIndex = feedbacks.length - 1;
+          } else if (currentFeedbackIndex >= feedbacks.length) { 
+              currentFeedbackIndex = 0;
+          }
+          updateFeedback();
+      }
+      
+      function goToFeed(index) {
+          currentFeedbackIndex = index;
+          updateFeedback();    
+      }
+      </script>
+  </body>
+</html>
